@@ -1,0 +1,24 @@
+1. Header files are files that contain the code of some of the builtin functions that we will be using in our program. So we dont have to write the codes of those functions again, the compiler will include them during the preprocessing stage when compiling. If we fail to include this functions our program will give errors of implicit declaration of the function used. Some of this builtin function are printf, scanf, strlen, strcat, strcmp etc. The header files are included in this format #include <name.h> where name is the header file name like for standard input and output we use *"stdio"*. The typical file extension used is .h which stands for header, meaning its a header file.
+
+
+2. The -o option in the gcc is an option to give our executable file a name, where if we dont use it the program will execute with the default executable name a.out. 
+I think the significance or the importance of using -o is to give our executable file a specifc name that is easy to remember and unique. I would imagine if one had like more than project and they compile with the default name, it would be very confusing so I think its a good practise to use the -o option to make your exectable file unique
+
+
+3. The different options used in the gcc compiler are 
+	-Wall - This is an option that enables all warning that can cause compilation problems to your code.
+	-Werror - This option is used to treat all the warning given by Wall and Wetra options as errors, meaning your file will not compile before dealing and correcting the errors
+	-Wextra - This is like the Wall option, it gives more extra warning to your code making it more strict to following all the rules
+	-pedantic - This option is used to set the c standard, so it gives error if your code does follow those c standard that have been specified
+	-std=gnu89 - This is an example of the standard for c that you can specify that code should follow. This can vary depending on your code ad what you want it to accompish I believe. One can use differnt standard like gnu 89, gnu 99 etc.
+
+
+4. The gcc alias to create would be alias gcc_flags ='gcc -Wall -Werror -Wextra -pedantic -std=gnu89'
+
+
+5. Some five consice why C is fun 'My thinking'
+	- Despite having a lot of rules, when you get to master and understand this rules, one will enjoy coding with c compared to any other language especially if its a simpler language like python which has few rules to follow. I personally feel like thats the joy of learning a programming language
+	- Another reason is how you compile and get to see all the errors in your code, I understand sometimes it can be a lot, but I really think its so fun to actually correct the errors and how it specifically points where the error is and sometimes why its an error and even gives you options of what you would possibly use. This makes c really fun to code with. Testing it during copilation and seing it work makes it even more magical.
+	- Another reason is how c gives you some priviliges to interact with the hardware components and memory management. The fact that with c you can be able to allocate memory to your program is very satisying, although its a bit hectic to allocate and also remember to free the memory when not needed, but, if you understand fully how c works and all the rule, this really makes it so fun. There are also tools that one can use to check for memory issues like the valgrid, yet another reason to make c fun, you get to use a tool to check for problems and solve them yourselve, that sounds fun to me.
+	- Also the fact that so many other languages were made from c makes learning c fun. Imagining maybe in future when you really master c well you can be able to create your own language or even program that would be impactful makes it a reason to actually eager to know it.I am not saying other languages cannot make programs that are impactful. Also the fact that you will find the other languages, especially those created from c easy to undestand also makes it fun.
+	-Lastly, I dont know whether I am on this alone, but the fact that C allows one to really think logically especially in the use of pointers and other concepts like memory management makes it more fun. It is really mentally engaging and that really makes it fun, this is for those who really love to be mentally engaged and think 'hard'.
