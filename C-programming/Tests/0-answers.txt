@@ -1,4 +1,9 @@
-1. Header files are files that contain the code of some of the builtin functions that we will be using in our program. So we dont have to write the codes of those functions again, the compiler will include them during the preprocessing stage when compiling. If we fail to include this functions our program will give errors of implicit declaration of the function used. Some of this builtin function are printf, scanf, strlen, strcat, strcmp etc. The header files are included in this format #include <name.h> where name is the header file name like for standard input and output we use *"stdio"*. The typical file extension used is .h which stands for header, meaning its a header file.
+1. Header files are files that contain the code of some of the builtin functions that we will be using in our program. 
+So we dont have to write the codes of those functions again, the compiler will include them during the preprocessing stage when compiling. 
+If we fail to include this functions our program will give errors of implicit declaration of the function used. 
+Some of this builtin function are printf, scanf, strlen, strcat, strcmp etc. 
+The header files are included in this format #include <name.h> where name is the header file name like for standard input and output we use *"stdio"*. 
+The typical file extension used is .h which stands for header, meaning its a header file.
 
 
 2. The -o option in the gcc is an option to give our executable file a name, where if we dont use it the program will execute with the default executable name a.out. 
