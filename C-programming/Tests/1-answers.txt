@@ -1,0 +1,18 @@
+1.a) A variable is like a container that is used in c programming to store data in memory. 
+  b) In C programming unlike other programming languages like python you have to declare a variable first before storing an data in memory. 
+This variable will act as a storage space for the value that one will assign to it. These variables are of different types, and this types depends on the data the user wants to store.
+There are a couple of these data types like integers (int), characaters (char), floating (float), pointers among others.
+Example if one wants to store there age in the computer memory they will use int data type because age is a number. They will basically initialize it like:
+	- int age = 40; This will assign a memory space called age and store value 40 in it. To be able to access this value one will just use the variable name age, to access it.
+2. In a 64 bit machine this are the various data type size:
+	-int is 4 bytes
+	-char is 1 byte
+	-float is 4 bytes
+	-pointers are 4 bytes
+  In a 32 bit machine this are the data type size:
+	-int is 4 bypes
+	- char is 1 byte
+	-pointers are 8 bytes
+	-float are 4 bytes
+There are also other types for int that is, short int, long int and long long int.
+Short int in both 64 bit and 32 bits are 2 bytes in size. In a 64 bit long and lon long int are 8 bytes and in a 32 bit machine long int is 4 bytes
