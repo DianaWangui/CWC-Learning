@@ -14,6 +14,7 @@ int main(void)
 	char* Student_Name = "Diana Wangui";
 	char* Residence = "Mombasa Kenya";
 	int Age = 29;
+	/* Tried using (5'7)inches but oops I dont know how (Will research) */
 	float Height = 5.7;
 	char Gender = 'F';
 	/* Printing each variable with its own format specifier */
