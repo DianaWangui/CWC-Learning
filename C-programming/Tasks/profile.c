@@ -11,18 +11,18 @@
 int main(void)
 {
 	/* The var (char* ) is a pointer to the first element of our string */
-	char* Student_Name = "Diana Wangui";
-	char* Residence = "Mombasa Kenya";
-	int Age = 29;
+	char *name = "Diana Wangui";
+	char *residence = "Mombasa Kenya";
+	int age = 29;
 	/* Tried using (5'7)inches but oops I dont know how (Will research) */
-	float Height = 5.7;
-	char Gender = 'F';
+	float height = 5.7;
+	char gender = 'F';
 	/* Printing each variable with its own format specifier */
-	printf("Student Name = %s\n", Student_Name);
-	printf("Residence = %s\n", Residence);
-	printf("Age = %d years\n", Age);
-	printf("Height = %.1f inches\n", Height);
-	printf("Gender = %c\n", Gender);
+	printf("Student Name: %s\n", name);
+	printf("Residence: %s\n", residence);
+	printf("Age: %d years\n", age);
+	printf("Height: %.1f inches\n", height);
+	printf("Gender: %c\n", gender);
 
 	return (0);
 }
