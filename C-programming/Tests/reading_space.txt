@@ -1,0 +1,3 @@
+The ("%[^\n]%*c",....) used in scanf function to print string is mostly used to exclude spaces and new line characters entered by the user when taking input,
+The %*c means that you dont assign any value to the variable until you hit enter button on your keyboard. 
+Whenever this expression is used in scanf it allows every characted enterd by the user including spaces to be printed out along with the other characters entered. I t like reads the spaces as character also is simple terms and not as null terminator or new line characters, until one hits enter.
