@@ -32,7 +32,7 @@ int main(void)
 	printf("Gender: ");
 	scanf(" %s", gender);
 
-	printf("\nName: %s\nresidence: %s\nage: %d\nheight: %.2f\ngender: %s\n", name, residence, age, height, gender);
+	printf("\nName: %s\nResidence: %s\nAge: %d\nHeight: %.2f\nGender: %s\n", name, residence, age, height, gender);
 
 	return (0);
 }
