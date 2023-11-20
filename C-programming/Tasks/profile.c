@@ -10,19 +10,29 @@
  */
 int main(void)
 {
-	/* The var (char* ) is a pointer to the first element of our string */
-	char *name = "Diana Wangui";
-	char *residence = "Mombasa Kenya";
-	int age = 29;
-	/* Tried using (5'7)inches but oops I dont know how (Will research) */
-	float height = 5.7;
-	char gender = 'F';
-	/* Printing each variable with its own format specifier */
-	printf("Student Name: %s\n", name);
-	printf("Residence: %s\n", residence);
-	printf("Age: %d years\n", age);
-	printf("Height: %.1f inches\n", height);
-	printf("Gender: %c\n", gender);
+	/* Declaring the variable to store the user input read using printf */
+	char name[30];
+	char residence[30];
+	int age;
+	float height;
+	char gender[7];
+	/* Taking input from the user using scanf */
+	printf("Student Name: ");
+	scanf("%[^\n]%*c", name);
+
+	printf("Residence: ");
+	scanf(" %[^\n]%*c", residence);
+
+	printf("Age: ");
+	scanf("%d", &age);
+
+	printf("Height: ");
+	scanf("%f", &height);
+
+	printf("Gender: ");
+	scanf(" %s", gender);
+
+	printf("\nName: %s\nresidence: %s\nage: %d\nheight: %.2f\ngender: %s\n", name, residence, age, height, gender);
 
 	return (0);
 }
