@@ -3,9 +3,7 @@
  * main- A main function that will print out some values assigned to
  * some of its local varibale
  *
- * I have used char* to point to the first element of our string
- * A string is treated as an array of character so we assign
- * the pointer the address of the first element to our string
+ * using scanf to take input from user and then printing out the data
  * Return: 0 on success execution
  */
 int main(void)
