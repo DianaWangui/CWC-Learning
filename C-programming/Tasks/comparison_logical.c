@@ -41,6 +41,18 @@ int main(void)
 	{
 		printf("Person 3 is the oldest.\n");
 	}
+	else if (age_person1 == age_person2 && age_person1 > age_person3)
+	{
+		printf("Person 1 and 2 are the oldest\n");
+	}
+	else if (age_person2 == age_person3 && age_person2 > age_person1)
+	{
+		printf("Person 2 and 3 are the oldest\n");
+	}
+	else if (age_person1 == age_person3 && age_person1 > age_person2)
+	{
+		printf("Person 1 and 3 are the oldest\n");
+	}
 	else
 	{
 		printf("There is a tie in ages\n");
