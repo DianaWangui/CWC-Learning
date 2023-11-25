@@ -17,10 +17,10 @@ int main(void)
 	printf("Enter the age of the first person: ");
 	scanf("%d", &age_person1);
 
-	printf("\nEnter the age of the second person: ");
+	printf("Enter the age of the second person: ");
 	scanf("%d", &age_person2);
 
-	printf("\nEnter the age of the third person: ");
+	printf("Enter the age of the third person: ");
 	scanf("%d", &age_person3);
 
 	/**
@@ -29,25 +29,29 @@ int main(void)
 	 * or using logical or(||) operator to check if there 
 	 * is any more than two ages which are equal
 	 */
-	if (age_person1 > age_person2 && age_person1 > age_person3)
+	if (age_person1 >= age_person2 && age_person1 >= age_person3)
 	{
-		printf("\nPerson 1 is the oldest.");
+		printf("Person 1 is the oldest.\n");
 	}
-	else if (age_person2 > age_person1 && age_person2 > age_person3)
+	else if (age_person2 > age_person1 && age_person2 >= age_person3)
 	{
-		printf("\nPerson 2 is the oldest.");
+		printf("Person 2 is the oldest.\n");
 	}
 	else if (age_person3 > age_person1 && age_person3 > age_person2)
 	{
-		printf("\nPerson 3 is the oldest.");
-	}
-	else if (age_person1 == age_person2 || age_person2 == age_person3 || age_person1 == age_person3)
-	{
-		printf("\nAtleast two persons share the same age.");
+		printf("Person 3 is the oldest.\n");
 	}
 	else
 	{
-		printf("\nInvalid input.");
+		printf("There is a tie in ages\n");
+	}
+	if (age_person1 == age_person2 || age_person2 == age_person3 || age_person1 == age_person3)
+	{
+		printf("Atleast two persons share the same age.\n");
+	}
+	else
+	{
+		printf("No two people share same age\n");
 	}
 	printf("\n");
 
