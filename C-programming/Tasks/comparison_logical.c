@@ -29,11 +29,11 @@ int main(void)
 	 * or using logical or(||) operator to check if there 
 	 * is any more than two ages which are equal
 	 */
-	if (age_person1 >= age_person2 && age_person1 >= age_person3)
+	if (age_person1 > age_person2 && age_person1 > age_person3)
 	{
 		printf("Person 1 is the oldest.\n");
 	}
-	else if (age_person2 > age_person1 && age_person2 >= age_person3)
+	else if (age_person2 > age_person1 && age_person2 > age_person3)
 	{
 		printf("Person 2 is the oldest.\n");
 	}
