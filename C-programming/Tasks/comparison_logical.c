@@ -65,7 +65,6 @@ int main(void)
 	{
 		printf("No two people share same age\n");
 	}
-	printf("\n");
 
 	return (0);
 }
