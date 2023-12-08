@@ -22,7 +22,7 @@ int main(void)
      */
     if (user_no < 0 || user_no > 100)
     {
-      printf("Please enter a positive number\n");
+      printf("Please enter a number in the given range\n");
       continue;
     }
     /* Count is used here to count number of time user guessed and its incremented each time user guesses */
