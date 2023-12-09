@@ -17,13 +17,17 @@ int main(void)
   {
     printf("enter your guess (1-100): ");
     input_no = scanf("%d", &user_no);
+    /*checking if user input is a valid int value if not*/
     if (input_no != 1)
     {
+      /* keep reading each value and return an error message*/
       while (getchar() != '\n')
       {
-        printf("Invalid input. Please enter an number\n");
+        continue;
+        printf("enter a valid int value\n");
       }
-        }
+      // printf("Enter a valid int value.\n");
+    }
     /*Checking if user input is beyond the targetted input range
      *the loop will continue until the user input is in range 1-100
      */
