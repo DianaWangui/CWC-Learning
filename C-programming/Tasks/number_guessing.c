@@ -4,33 +4,40 @@
 
 int main(void)
 {
-  int number, user_no, input_no;
+  int number, user_no;
   int count = 0;
+  int non_int_input;
+
+  /* this will be used to check the number of times an error is printed*/
+  int error_printed;
+
   /*srand() is a function in c used to generate random numbers */
-  /* I used srand(time(NULL)) to randomly chose
-   a different number when the program is run*/
+  /* function srand(time(NULL)) is used to randomly chose
+   a different number everytime the program runs*/
   srand(time(NULL));
 
   number = rand() % 100;
-  /* We use while loop to iterate */
+  /* We use while loop to iterate the number of time user guesses */
   while (1)
   {
-    printf("enter your guess (1-100): ");
-    input_no = scanf("%d", &user_no);
-    /*checking if user input is a valid int value if not*/
-    if (input_no != 1)
+    if (!error_printed)
     {
-      /* keep reading each value and return an error message*/
-      while (getchar() != '\n')
-      {
-        continue;
-        printf("enter a valid int value\n");
-      }
-      // printf("Enter a valid int value.\n");
+      printf("enter your guess (1-100): ");
     }
-    /*Checking if user input is beyond the targetted input range
-     *the loop will continue until the user input is in range 1-100
-     */
+    non_int_input = scanf("%d", &user_no);
+    /*checking if user input is a valid int value if not*/
+    if (non_int_input != 1)
+    {
+      /* keep reading each value one by one and return an error message*/
+      while (getchar() != '\n')
+        ;
+      if (!error_printed)
+      {
+        printf("enter a valid int value\n");
+        continue;
+      }
+    }
+    /*Checking if user input is beyond the targetted input range */
     if (user_no < 0 || user_no > 100)
     {
       printf("Please enter a number in the given range\n");
