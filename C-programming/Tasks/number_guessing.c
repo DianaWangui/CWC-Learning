@@ -4,7 +4,7 @@
 
 int main(void)
 {
-  int number, user_no;
+  int number, user_no, input_no;
   int count = 0;
   /*srand() is a function in c used to generate random numbers */
   /* I used srand(time(NULL)) to randomly chose
@@ -16,7 +16,14 @@ int main(void)
   while (1)
   {
     printf("enter your guess (1-100): ");
-    scanf("%d", &user_no);
+    input_no = scanf("%d", &user_no);
+    if (input_no != 1)
+    {
+      while (getchar() != '\n')
+      {
+        printf("Invalid input. Please enter an number\n");
+      }
+        }
     /*Checking if user input is beyond the targetted input range
      *the loop will continue until the user input is in range 1-100
      */
