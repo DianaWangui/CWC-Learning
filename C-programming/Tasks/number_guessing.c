@@ -62,11 +62,6 @@ int main(void)
     {
       printf("Incorrect! Try lower.\n");
     }
-    /* I dont think this will get executed, but I think it should handle non-int value*/
-    else
-    {
-      printf("Incorrect! Try again.\n");
-    }
   }
   return (0);
 }
