@@ -48,7 +48,7 @@ int calculate(int num1, int num2, int (*func_ptr[4])(int, int))
   if (choice >= 0 && choice <= 3)
   {
     result = func_ptr[choice](num1, num2);
-    printf("Result: %d", result);
+    printf("Result: %d\n", result);
   }
   else
   {
