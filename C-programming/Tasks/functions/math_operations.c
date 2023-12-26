@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* Prototypes of the function used*/
 int addition(int num1, int num2);
 int subtract(int num1, int num2);
 int multiplication(int num1, int num2);
@@ -8,8 +9,11 @@ int calculate(int num1, int num2, int (*func_ptr[4])(int, int));
 int main(void)
 {
   int number1, number2;
+  /* pointer to all the function used, in an array format*/
   int (*func_ptr[4])(int, int);
   int repeat;
+
+  /* Do while loop for the calculation to loop until the choice is not 1*/
   do
   {
     printf("Enter the first number: ");
@@ -25,10 +29,12 @@ int main(void)
   return 0;
 }
 
+/* The function that calls the other function using array function pointer and returns the result*/
 int calculate(int num1, int num2, int (*func_ptr[4])(int, int))
 {
   int choice, result;
 
+  /* Initializing each array with its index*/
   func_ptr[0] = addition;
   func_ptr[1] = subtract;
   func_ptr[2] = multiplication;
@@ -37,6 +43,8 @@ int calculate(int num1, int num2, int (*func_ptr[4])(int, int))
   printf("Select Operation:\n0. Addition\n1. Subtraction\n2. Multiplication\n3. Division\n");
   printf("Enter the operation: ");
   scanf("%d", &choice);
+
+  /* Checking the correct user input otherwise print invalid input*/
   if (choice >= 0 && choice <= 3)
   {
     result = func_ptr[choice](num1, num2);
@@ -49,7 +57,7 @@ int calculate(int num1, int num2, int (*func_ptr[4])(int, int))
   return result;
 }
 
-/*Additional function*/
+/*Addition function*/
 int addition(int num1, int num2)
 {
   int sum;
@@ -58,6 +66,7 @@ int addition(int num1, int num2)
   return sum;
 }
 
+/*Subtraction function*/
 int subtract(int num1, int num2)
 {
   int sub;
@@ -65,6 +74,8 @@ int subtract(int num1, int num2)
   sub = num1 - num2;
   return sub;
 }
+
+/*Multiplication fucntion*/
 int multiplication(int num1, int num2)
 {
   int mul;
@@ -72,6 +83,8 @@ int multiplication(int num1, int num2)
   mul = num1 * num2;
   return mul;
 }
+
+/*Division function*/
 int division(int num1, int num2)
 {
   int div;
