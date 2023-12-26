@@ -28,30 +28,25 @@ int main(void)
 int calculate(int num1, int num2, int (*func_ptr[4])(int, int))
 {
   int choice, result;
+
   func_ptr[0] = addition;
   func_ptr[1] = subtract;
   func_ptr[2] = multiplication;
   func_ptr[3] = division;
 
-  do
+  printf("Select Operation:\n0. Addition\n1. Subtraction\n2. Multiplication\n3. Division\n");
+  printf("Enter the operation: ");
+  scanf("%d", &choice);
+  if (choice >= 0 && choice <= 3)
   {
-    printf("Select Operation:\n0. Addition\n1. Subtraction\n2. Multiplication\n3. Division\n");
-    printf("Enter the operaion: ");
-    scanf("%d", &choice);
-    if (choice >= 0 && choice <= 3)
-    {
-      result = func_ptr[choice](num1, num2);
-      printf("Result: %d", result);
-    }
-    else
-    {
-      printf("Invalid operation.\n");
-    }
-    return func_ptr[choice](num1, num2);
-  } while (choice != 0);
-  {
-    /* code */
+    result = func_ptr[choice](num1, num2);
+    printf("Result: %d", result);
   }
+  else
+  {
+    printf("Invalid operation.\n");
+  }
+  return result;
 }
 
 /*Additional function*/
