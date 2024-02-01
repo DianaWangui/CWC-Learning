@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
     exit(EXIT_FAILURE);
   }
 
+  /*This was declared here to correct segmentation fault*/
+  /*Will get error with gcc flags*/
   int first_value = atoi(argv[2]);
   int second_value = atoi(argv[3]);
 
